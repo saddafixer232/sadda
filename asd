@@ -90,7 +90,7 @@ if isMobile then
     local screenGui = Instance.new("ScreenGui")
     screenGui.Name = "MobileControlGui"
     screenGui.DisplayOrder = 999 
-    screenGui.Parent = player:WaitForChild("PlayerGui")
+    screenGui.Parent = LocalPlayer:WaitForChild("PlayerGui") -- Исправлено!
 
     local openButton = Instance.new("TextButton")
     openButton.Name = "OpenCloseUIButton"
